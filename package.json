@@ -1,0 +1,16 @@
+{
+  "name": "omniswift-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "export PATH=\"/opt/homebrew/opt/swift/bin:$PATH\" && export SWIFT_SDK_ID=\"swift-6.2.4-RELEASE_wasm\" && vite",
+    "build": "export PATH=\"/opt/homebrew/opt/swift/bin:$PATH\" && export SWIFT_SDK_ID=\"swift-6.2.4-RELEASE_wasm\" && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0-0",
+    "@elementary-swift/vite-plugin-swift-wasm": "latest",
+    "elementary-ui-browser-runtime": "file:./.build/checkouts/elementary-ui/BrowserRuntime"
+  }
+}

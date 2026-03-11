@@ -1,0 +1,17 @@
+# Swift
+.build/
+Packages/
+Package.resolved
+*.xcodeproj
+*.xcworkspace
+
+# Node
+node_modules/
+dist/
+.env
+
+# OS
+.DS_Store
+
+# Vite
+*.log
