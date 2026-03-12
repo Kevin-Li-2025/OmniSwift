@@ -1,16 +1,20 @@
 {
-  "name": "omniswift-demo",
+  "name": "omniswift",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "High-performance Swift-to-WebAssembly web framework starter, powered by ElementaryUI and Vite.",
   "type": "module",
   "scripts": {
     "dev": "export PATH=\"/opt/homebrew/opt/swift/bin:$PATH\" && export SWIFT_SDK_ID=\"swift-6.2.4-RELEASE_wasm\" && vite",
     "build": "export PATH=\"/opt/homebrew/opt/swift/bin:$PATH\" && export SWIFT_SDK_ID=\"swift-6.2.4-RELEASE_wasm\" && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf dist .build/debug .build/release"
   },
   "devDependencies": {
     "vite": "^8.0.0-0",
     "@elementary-swift/vite-plugin-swift-wasm": "latest",
     "elementary-ui-browser-runtime": "file:./.build/checkouts/elementary-ui/BrowserRuntime"
-  }
+  },
+  "keywords": ["swift", "webassembly", "wasm", "web", "frontend", "elementaryui"],
+  "license": "MIT"
 }

@@ -4,14 +4,27 @@ Packages/
 Package.resolved
 *.xcodeproj
 *.xcworkspace
+xcuserdata/
 
 # Node
 node_modules/
 dist/
 .env
+.env.*
 
 # OS
 .DS_Store
+Thumbs.db
 
 # Vite
 *.log
+*.local
+
+# Editor
+.vscode/
+.idea/
+
+# Misc
+*.swp
+*.swo
+*~
