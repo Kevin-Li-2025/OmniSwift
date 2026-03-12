@@ -11,10 +11,19 @@
     "clean": "rm -rf dist .build/debug .build/release"
   },
   "devDependencies": {
-    "vite": "^8.0.0-0",
     "@elementary-swift/vite-plugin-swift-wasm": "latest",
-    "elementary-ui-browser-runtime": "file:./.build/checkouts/elementary-ui/BrowserRuntime"
+    "elementary-ui-browser-runtime": "file:./.build/checkouts/elementary-ui/BrowserRuntime",
+    "esbuild": "^0.27.3",
+    "vite": "^8.0.0-0",
+    "wasm-opt": "^1.4.0"
   },
-  "keywords": ["swift", "webassembly", "wasm", "web", "frontend", "elementaryui"],
+  "keywords": [
+    "swift",
+    "webassembly",
+    "wasm",
+    "web",
+    "frontend",
+    "elementaryui"
+  ],
   "license": "MIT"
 }

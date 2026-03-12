@@ -9,8 +9,8 @@ export default defineConfig(({ mode }) => {
       swiftWasm({
         packagePath: '.',
         targetName: 'OmniSwift',
-        // Use Embedded Swift for smaller binaries in production
-        useEmbeddedSDK: isProduction,
+        // Use Embedded Swift for smaller binaries in production (temporarily disabled due to linker errors)
+        useEmbeddedSDK: false,
         // Optimize WASM binary in production
         useWasmOpt: isProduction,
         wasmOptArgs: isProduction ? ['-Os', '--strip-debug'] : [],
